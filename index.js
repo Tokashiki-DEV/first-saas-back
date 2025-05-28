@@ -32,9 +32,9 @@ app.get("/", (req, res) => {
 app.listen(
   {
     host: "0.0.0.0",
-    port: process.env.API_ENDPOINT || 8080,
+    port: process.env.API_ENDPOINT,
   },
   () => {
-    console.log("Server Running on " + process.env.API_ENDPOINT || 8080);
+    console.log("Server Running on " + process.env.API_ENDPOINT);
   }
 );

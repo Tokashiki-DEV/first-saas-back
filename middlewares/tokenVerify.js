@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-const secretKey = "secret";
+const secretKey = "";
 
 const authenticateToken = (req, res, next) => {
   const token = req.headers.authorization;
@@ -10,8 +10,8 @@ const authenticateToken = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, secretKey);
-    req.user = decoded; 
-    next(); 
+    req.user = decoded;
+    next();
   } catch (error) {
     return res
       .status(401)

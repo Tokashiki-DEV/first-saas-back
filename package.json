@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "date-fns-tz": "^3.2.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon index.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "22.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
